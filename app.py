@@ -16,7 +16,7 @@ api_key = st.secrets["OPENAI_API_KEY"]
 def process_pdf():
     # [주의] Github에 PDF를 올릴 때는 './data/파일명.pdf' 처럼 상대 경로를 쓰세요.
     # 아래는 현재 코드상의 경로입니다. 필요시 수정하세요.
-    file_path = "C:/RAG/Ch01/data/2024_KB_부동산_보고서_최종.pdf"
+    file_path = "./data/2024_KB_부동산_보고서_최종.pdf"
     
     if not os.path.exists(file_path):
         st.error(f"PDF 파일을 찾을 수 없습니다: {file_path}")
